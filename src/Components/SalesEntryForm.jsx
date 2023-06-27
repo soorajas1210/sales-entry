@@ -38,9 +38,6 @@ const SalesEntryForm = () => {
         },
     ]);
 
-    const [selectedItem, setSelectedItem] = useState({ item_code: '', item_name: '' });
-
-
     const handleHeaderChange = (e) => {
         const { name, value } = e.target;
         const parsedValue = name === 'vr_no' ? parseInt(value) : value;
